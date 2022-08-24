@@ -1,0 +1,143 @@
+/* White: hsl(0, 0%, 100%)
+Light Grey: hsl(217, 12%, 63%)
+Medium Grey: hsl(216, 12%, 54%)
+Dark Blue: hsl(213, 19%, 18%)
+Very Dark Blue: hsl(216, 12%, 8%)
+Orange: hsl(25, 97%, 53%) */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: overpass;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    align-items: center;
+    background-color:hsl(216, 12%, 8%);
+}
+
+.main {
+    background-color:hsl(213, 19%, 18%);
+    width: 400px;
+    padding: 1.5rem 1.8rem;
+    border-radius: 2rem;
+    /* display: none; */
+    position: absolute;
+}
+.main img {
+    background-color: hsl(213, 20%, 24%);
+    background-image: url("../images/icon-star.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 0.8rem;
+    border-radius: 50%;
+    margin-bottom: 1.5rem;
+    margin-top: 0.5rem;
+}
+.main h1 {
+    color: hsl(0, 0%, 100%);
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+    font-size: 1.7rem;
+}
+.main p {
+    font-size: 15px;
+    color: hsl(216, 12%, 54%);
+    margin-bottom: 1.5rem;
+    line-height: 1.5rem;
+}
+
+.btn5 {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
+.btn5 button {
+    background-color:hsl(213, 20%, 24%) ;
+    color: hsl(216, 12%, 54%);
+    border: none;
+    width: 3.2rem;
+    height: 3.2rem;
+    border-radius: 50%;
+    font-family: overpass;
+    font-weight: 700;
+    cursor: pointer;
+}
+.btn5 button:hover{
+    background-color:hsl(216, 12%, 54%) ;
+    color: hsl(0, 0%, 100%);
+}
+.btn5 button:focus{
+    background-color: hsl(25, 97%, 53%);
+    color: hsl(0, 0%, 100%);
+}
+
+
+.submit {
+    background-color: hsl(25, 97%, 53%);
+    color: hsl(0, 0%, 100%);
+    border: none;
+    width: 100%;
+    height: 3rem;
+    border-radius: 2rem;
+    margin-bottom: 0.5rem;
+    font-family: overpass;
+    font-weight: 700;
+    text-transform:uppercase;
+    cursor:pointer;
+}
+.submit:hover {
+    color: hsl(25, 97%, 53%);
+    background-color: hsl(0, 0%, 100%);
+}
+
+
+
+
+
+.active {
+    /* display: none; */
+    background-color:hsl(213, 19%, 18%);
+    width: 400px;
+    padding: 3rem 1.8rem;
+    border-radius: 2rem;
+    height: 405.6px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+}
+.active h1 {
+    color: hsl(0, 0%, 100%);
+    font-size: 1.7rem;
+    margin-bottom: 0.5rem;
+}
+.active p:nth-child(2){
+    background-color: hsl(213, 20%, 24%);
+    color: hsl(25, 97%, 53%);
+    margin: 2rem;
+    padding: 0.3rem 0.8rem;
+    border-radius: 2rem;
+    font-size: 15px;
+}
+.active p:last-child {
+    color: hsl(216, 12%, 54%);
+    font-size: 15px;
+    line-height: 1.5rem;
+}
+
+
+/* MEDIA QUERIES 375px */
+
+@media screen and (max-width : 600px) {
+    .main, .active {
+        width: 375px;
+        border-radius: 1rem;
+    }
+}
